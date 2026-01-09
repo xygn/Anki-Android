@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   # Optional: Also trigger on pushes to your main branch
   push:
-    branches: [ main, master ]
+    branches: [ api, master ]
 
 jobs:
   build_debug_apk:
