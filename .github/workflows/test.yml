@@ -38,5 +38,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: AnkiDroid-Debug
-          # Adjust path if AnkiDroid outputs elsewhere, but this is standard
-          path: AnkiDroid/build/outputs/apk/debug/*.apk
+          # The '*' matches the flavor folder (e.g., 'full', 'standard')
+          path: AnkiDroid/build/outputs/apk/*/debug/*.apk
